@@ -10,3 +10,11 @@ def validation():
         if assignment_name:
             break
         print("Invalid assignment name. Please enter a non-empty string.")
+
+    # Category
+    while True:
+        category = input("Enter the category of the assignment (FA/SA): ").upper()
+        if category in ['FA', 'SA']:
+            break
+        print("Invalid category. Please enter 'FA' or 'SA'.")
+
